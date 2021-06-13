@@ -1,0 +1,10 @@
+---
+- name: This playbook creates user
+  hosts: all
+  become: yes
+  tasks:
+  - name: creating gana user
+    user: 
+      name=gana
+      state=present
+...      
